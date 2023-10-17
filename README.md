@@ -1,9 +1,12 @@
 # Kate Bishop's Comments Feed API
 
-I made a few updates to this repository to resolve some errors on my machine:
+:sparkles: **See UI Repository [comments-feed](https://github.com/kate-bishop/comments-feed) for instructions on how to run the full app.**
 
-1. Updated sqlite3 version to "^5.0.3"
-2. In `./server/index`, configured cors to accept calls from localhost:3000
+I made a few updates to the provided front-end-cyoa repository that are needed to run this app locally. Please use this repository as the API server. Those changes include:
+
+1. CORS package added configured to accept calls from localhost:3000 (see the configuration change [here](https://github.com/kate-bishop/comments-feed-api/blob/main/server/index.js#L10))
+2. Package version for sqlite3 updated to "^5.0.3"
+   - Depending on the version installed on your machine, you may need to downgrade this package back to "^4.0.7"
 
 To start the server, run
 
@@ -12,6 +15,7 @@ npm install
 npm run dev
 ```
 
+## Original README Content:
 > # Front-end Choose Your Own Adventure Take-Home
 > 
 > Design and build a comments feed that displays all comments and notifies > a user in real-time when new comments are added.
